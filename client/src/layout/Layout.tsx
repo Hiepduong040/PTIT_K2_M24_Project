@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../components/NavBar/Navbar'
 
 export default function Layout() {
@@ -6,6 +5,7 @@ export default function Layout() {
     <div>
         <Navbar></Navbar>
         {/* <main>{children}</main> */}
+        
     </div>
   )
 }

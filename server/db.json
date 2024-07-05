@@ -1,78 +1,104 @@
 {
-    "users":[
+  "users": [
+    {
+      "id": 1,
+      "userName": "john_doe",
+      "email": "john@example.com",
+      "name": "John Doe",
+      "avatar": "https://example.com/profiles/john.jpg",
+      "banner": "https://example.com/profiles/john.jpg",
+      "bio": "Web developer and coffee enthusiast.",
+      "follows": [
         {
-            "id":1,
-            "userName":"john_doe",
-            "email":"john@example.com",
-            "name":"John Doe",
-            "avatar":"https://example.com/profiles/john.jpg",
-            "banner":"https://example.com/profiles/john.jpg",
-            "bio":"Web developer and coffee enthusiast.",
-            "follows":[
-                {
-                    "userId":1,
-                    "created_at":"2024-02-20T11:00:00Z"
-                    
-                }
-            ],
-            "friends":[
-                {
-                    "userId":1,
-                    "add_at":"2024-02-20T11:00:00Z"
-                }
-            ],
-            "groups":[],
-            "created_at":"2024-01-15T08:00:00Z"
-
+          "userId": 1,
+          "created_at": "2024-02-20T11:00:00Z"
         }
-    ],
-
-    "posts":[
+      ],
+      "friends": [
         {
-            "id":1,
-            "user_id":1,
-            "group_id":-1,
-            "content":"Jusst finished a great book on web development",
-            "image":[
-                "https://example.com/posts/book.jpg",
-                "https://example.com/posts/beach.jpg"
-
-            ],
-            "reactions":[
-                {
-                    "user_id":2,
-                    "type": "laugh",
-                    "created_at":"2024-06-01T13:00:00Z"
-                }
-            ],
-            "created_at":"2024-06-01T12:00:00Z"
+          "userId": 1,
+          "add_at": "2024-02-20T11:00:00Z"
         }
-    ],
-    "comments":[
+      ],
+      "groups": [],
+      "created_at": "2024-01-15T08:00:00Z"
+    },
+    {
+      "name": "hiệp",
+      "email": "hiep040dz@gmail.com",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "id": 1720156029244,
+      "userName": "hiệp",
+      "avatar": "",
+      "banner": "",
+      "bio": "",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-05T05:07:09.244Z"
+    },
+    {
+      "name": "Thinh",
+      "email": "test@gmail.com",
+      "password": "7654321",
+      "confirmPassword": "7654321",
+      "id": 1720156601911,
+      "userName": "thinh",
+      "avatar": "",
+      "banner": "",
+      "bio": "",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-05T05:16:41.911Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "group_id": -1,
+      "content": "Jusst finished a great book on web development",
+      "image": [
+        "https://example.com/posts/book.jpg",
+        "https://example.com/posts/beach.jpg"
+      ],
+      "reactions": [
         {
-            "id":1,
-            "post_id":1,
-            "user_id":2,
-            "image":"",
-            "content":"Sounds interesting! What's the title?",
-            "reactions":[],
-            "created_at":"2024-06-01T12:30:00Z"
+          "user_id": 2,
+          "type": "laugh",
+          "created_at": "2024-06-01T13:00:00Z"
         }
-    ],
-    "groups":[
+      ],
+      "created_at": "2024-06-01T12:00:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "user_id": 2,
+      "image": "",
+      "content": "Sounds interesting! What's the title?",
+      "reactions": [],
+      "created_at": "2024-06-01T12:30:00Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "groupName": "john_doe",
+      "group_picture": "https://example.com/profiles/john.jpg",
+      "banner": "https://example.com/profiles/john.jpg",
+      "bio": "Web developer and coffee enthusiast.",
+      "members": [
         {
-            "id":1,
-            "groupName":"john_doe",
-            "group_picture":"https://example.com/profiles/john.jpg",
-            "banner":"https://example.com/profiles/john.jpg",
-            "bio":"Web developer and coffee enthusiast.",
-            "members":[
-                {
-                    "userId":1,
-                    "join_at":"2024-02-20T11:00:00Z"
-                }
-            ],
-            "created_at":"2024-01-15T08:00:00Z"
+          "userId": 1,
+          "join_at": "2024-02-20T11:00:00Z"
         }
-    ]
+      ],
+      "created_at": "2024-01-15T08:00:00Z"
+    }
+  ]
 }
