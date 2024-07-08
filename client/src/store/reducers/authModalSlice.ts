@@ -1,55 +1,32 @@
-// reducers/authModalSlice.js
-// slices/authModalSlice.js
+
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 export interface AuthModalState {
-    open: boolean;
-    view: "login" | "signup" | "resetPassword";
-  }
-  
-  interface AuthModalAction {
-    type: string;
-    payload?: any;
-  }
-  
-  const initialState: AuthModalState = {
-    open: false,
-    view: "login",
-  };
-  
-  export const authModalReducer = (state: AuthModalState = initialState, action: AuthModalAction): AuthModalState => {
-    switch (action.type) {
-      case 'OPEN_MODAL':
-        return {
-          ...state,
-          open: true,
-          view: action.payload,
-        };
-      case 'CLOSE_MODAL':
-        return {
-          ...state,
-          open: false,
-        };
-      case 'SET_VIEW':
-        return {
-          ...state,
-          view: action.payload,
-        };
-      default:
-        return state;
-    }
-  };
-  
-  // Action creators
-  export const openModal = (view: "login" | "signup" | "resetPassword") => ({
-    type: 'OPEN_MODAL',
-    payload: view,
-  });
-  
-  export const closeModal = () => ({
-    type: 'CLOSE_MODAL',
-  });
-  
-  export const setView = (view: "login" | "signup" | "resetPassword") => ({
-    type: 'SET_VIEW',
-    payload: view,
-  });
-  
+  open: boolean;
+  view: 'login' | 'signup' | 'resetPassword';
+}
+
+const initialState: AuthModalState = {
+  open: false,
+  view: 'login',
+};
+
+const authModalSlice = createSlice({
+  name: 'authModal',
+  initialState,
+  reducers: {
+    openModal: (state, action: PayloadAction<'login' | 'signup' | 'resetPassword'>) => {
+      state.open = true;
+      state.view = action.payload;
+    },
+    closeModal: (state) => {
+      state.open = false;
+    },
+    setView: (state, action: PayloadAction<'login' | 'signup' | 'resetPassword'>) => {
+      state.view = action.payload;
+    },
+  },
+});
+
+export const { openModal, closeModal, setView } = authModalSlice.actions;
+export default authModalSlice.reducer;

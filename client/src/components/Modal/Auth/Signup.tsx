@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebookF, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import  { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import "./login.css";
 
 interface User {
@@ -8,13 +8,13 @@ interface User {
     userName: string;
     email: string;
     name: string;
-    password:string;
+    password: string;
     avatar: string;
     banner: string;
     bio: string;
-    follows: any[];
-    friends: any[];
-    groups: any[];
+    follows: [];
+    friends: [];
+    groups: [];
     created_at: string;
 }
 
@@ -30,7 +30,11 @@ interface LoginData {
     password: string;
 }
 
-export default function Login() {
+interface LoginProps {
+    toggleView: (view: 'login' | 'signup') => void;
+}
+
+export default function Login({ toggleView }: LoginProps) {
     const [isActive, setIsActive] = useState(false);
     const [formData, setFormData] = useState<FormData>({
         name: '',
@@ -46,10 +50,12 @@ export default function Login() {
     const [loginError, setLoginError] = useState('');
 
     const handleRegisterClick = () => {
+        // toggleView('signup');
         setIsActive(true);
     };
 
     const handleLoginClick = () => {
+        // toggleView('login');
         setIsActive(false);
     };
 
