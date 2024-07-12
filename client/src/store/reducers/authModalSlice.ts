@@ -30,3 +30,7 @@ const authModalSlice = createSlice({
 
 export const { openModal, closeModal, setView } = authModalSlice.actions;
 export default authModalSlice.reducer;
+
+
+
+

@@ -1,33 +1,11 @@
 {
   "users": [
     {
-      "id": 1,
-      "userName": "john_doe",
-      "email": "john@example.com",
-      "name": "John Doe",
-      "avatar": "https://example.com/profiles/john.jpg",
-      "banner": "https://example.com/profiles/john.jpg",
-      "bio": "Web developer and coffee enthusiast.",
-      "follows": [
-        {
-          "userId": 1,
-          "created_at": "2024-02-20T11:00:00Z"
-        }
-      ],
-      "friends": [
-        {
-          "userId": 1,
-          "add_at": "2024-02-20T11:00:00Z"
-        }
-      ],
-      "groups": [],
-      "created_at": "2024-01-15T08:00:00Z"
-    },
-    {
       "name": "hiệp",
       "email": "hiep040dz@gmail.com",
       "password": "1234567",
       "confirmPassword": "1234567",
+      "status": true,
       "id": 1720156029244,
       "userName": "hiệp",
       "avatar": "",
@@ -41,52 +19,168 @@
     {
       "name": "Thinh",
       "email": "test@gmail.com",
-      "password": "7654321",
-      "confirmPassword": "7654321",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "status": true,
       "id": 1720156601911,
       "userName": "thinh",
-      "avatar": "",
-      "banner": "",
-      "bio": "",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Favatar%2FCorvette%20Z06%20in%20San%20Francisco.jpg?alt=media&token=3eaf6f2e-327f-4614-b3b2-342c822ed59f",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fbanner%2FCopenhague%20in%20Spring.jpg?alt=media&token=5f8e285f-184a-4e5e-9b97-67c4e8df6c94",
+      "bio": "phượt",
       "follows": [],
-      "friends": [],
+      "friends": [
+        {
+          "userId": 1720598647379,
+          "add_at": "2024-07-12T01:38:14.600Z"
+        }
+      ],
       "groups": [],
       "created_at": "2024-07-05T05:16:41.911Z"
     },
     {
       "name": "Hiển",
       "email": "Hien@gmail.com",
-      "password": "hien123",
-      "confirmPassword": "hien123",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "status": true,
       "id": 1720168472498,
       "userName": "hiển",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Favatar%2F03760_greenhell_3840x2160.jpg?alt=media&token=67a7c613-7266-46eb-885a-aecb39373e73",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fbanner%2Fpexels-eberhard-grossgasteiger-1417651.jpg?alt=media&token=7243f161-245c-4e2a-8d1a-4cf0f83b3b84",
+      "bio": "done project",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-05T08:34:32.498Z"
+    },
+    {
+      "name": "Tung",
+      "email": "tungt@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "status": true,
+      "id": 1720584402987,
+      "userName": "tung",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Favatar%2F03760_greenhell_3840x2160.jpg?alt=media&token=458ba925-a41e-4ac4-bd17-d419f7cc245b",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fbanner%2F03490_serenesunset_3840x2160.jpg?alt=media&token=47827771-2391-4425-96eb-1da8cf98cf77",
+      "bio": "TugThanh",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-10T04:06:42.987Z"
+    },
+    {
+      "name": "Bảo",
+      "email": "bao@gmail.com",
+      "password": "bao123",
+      "confirmPassword": "bao123",
+      "status": true,
+      "id": 1720598647379,
+      "userName": "bảo",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Favatar%2F1335809.png?alt=media&token=fe74f494-16d6-4bcd-8f57-58112fd1fa5f",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fbanner%2F1335809.png?alt=media&token=fad2c5ae-4e21-46e2-86c2-639cc5cb7541",
+      "bio": "",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-10T08:04:07.379Z"
+    },
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "status": true,
+      "id": 1111111111111,
+      "userName": "Admindz",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fanhthe.PNG?alt=media&token=cda8c241-56d4-40b5-9879-2e93e6358f5e",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fkyniem.PNG?alt=media&token=246337bc-5d98-4d44-8565-5ee7d52279db",
+      "bio": "siêu đẹp chaiii",
+      "follows": [],
+      "friends": [
+        {
+          "userId": 1720156601911,
+          "add_at": "2024-07-12T01:12:26.453Z"
+        },
+        {
+          "userId": 1720156601911,
+          "add_at": "2024-07-12T01:15:07.321Z"
+        },
+        {
+          "userId": 1720598647379,
+          "add_at": "2024-07-12T01:29:42.699Z"
+        },
+        {
+          "userId": 1720584402987,
+          "add_at": "2024-07-12T01:29:45.855Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-07-10T08:04:07.379Z"
+    },
+    {
+      "name": "acc1",
+      "email": "acc1@gmail.com",
+      "password": "111111",
+      "confirmPassword": "111111",
+      "status": true,
+      "id": 1720756775005,
+      "userName": "acc1",
       "avatar": "",
       "banner": "",
       "bio": "",
       "follows": [],
       "friends": [],
       "groups": [],
-      "created_at": "2024-07-05T08:34:32.498Z"
+      "created_at": "2024-07-12T03:59:35.005Z"
     }
   ],
   "posts": [
     {
-      "id": 1,
-      "user_id": 1,
-      "group_id": -1,
-      "content": "Jusst finished a great book on web development",
+      "user_id": 1720598647379,
+      "content": "7h25",
       "image": [
-        "https://example.com/posts/book.jpg",
-        "https://example.com/posts/beach.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fpost%2F439447196_406005448861612_191818592475277229_n.jpg?alt=media&token=a42e4d49-17ba-4785-a866-b5e8ff36e0e7"
       ],
-      "reactions": [
-        {
-          "user_id": 2,
-          "type": "laugh",
-          "created_at": "2024-06-01T13:00:00Z"
-        }
+      "created_at": "2024-07-12T00:26:12.496Z",
+      "reactions": [],
+      "type": "public",
+      "id": 30,
+      "status": true
+    },
+    {
+      "user_id": 1111111111111,
+      "content": "đe",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fpost%2Fz4975765068367_d67dba707c8875b38e29181933df25a7.jpg?alt=media&token=e051c1e8-8efc-4998-bdd4-d05bfe40710a"
       ],
-      "created_at": "2024-06-01T12:00:00Z"
+      "created_at": "2024-07-12T06:35:53.145Z",
+      "reactions": [],
+      "type": "public",
+      "id": 31,
+      "status": true
+    },
+    {
+      "user_id": 1111111111111,
+      "content": "aoma",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fpost%2F439447196_406005448861612_191818592475277229_n.jpg?alt=media&token=0c1124bd-715b-4d52-8a2f-9a7fbcb814db"
+      ],
+      "created_at": "2024-07-12T06:56:55.849Z",
+      "reactions": [],
+      "type": "public",
+      "id": 32
+    },
+    {
+      "user_id": 1720156601911,
+      "group_id": 1720531540815,
+      "content": "123",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2F439447196_406005448861612_191818592475277229_n.jpg?alt=media&token=dd2dee4b-d752-4502-9f57-03fe91e032fa"
+      ],
+      "reactions": [],
+      "created_at": "2024-07-12T08:44:53.191Z",
+      "id": 33
     }
   ],
   "comments": [
@@ -102,18 +196,173 @@
   ],
   "groups": [
     {
-      "id": 1,
-      "groupName": "john_doe",
-      "group_picture": "https://example.com/profiles/john.jpg",
-      "banner": "https://example.com/profiles/john.jpg",
-      "bio": "Web developer and coffee enthusiast.",
+      "id": 1720492790007,
+      "groupName": "gr1",
+      "group_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYP8_rR2qUm554ZlWZ5Pzyyd-6qduaAu8Ng&s",
+      "banner": "https://uploads-ssl.webflow.com/60555afdedaac932fc6d642d/60aef505344f330e4853f0cd_AdobeStock_354016533.jpg",
+      "bio": "",
+      "privacyType": "private",
       "members": [
         {
-          "userId": 1,
-          "join_at": "2024-02-20T11:00:00Z"
+          "userId": 2,
+          "join_at": "2024-07-09T02:39:50.007Z"
+        },
+        {
+          "userId": 1720156029244,
+          "join_at": "2024-07-10T03:46:56.924Z"
+        },
+        {
+          "userId": 1720598647379,
+          "join_at": "2024-07-12T00:25:22.960Z"
         }
       ],
-      "created_at": "2024-01-15T08:00:00Z"
+      "created_at": "2024-07-09T02:39:50.007Z"
+    },
+    {
+      "id": 1720531540815,
+      "groupName": "demo12345",
+      "group_picture": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2FCorvette%20Z06%20in%20San%20Francisco.jpg?alt=media&token=e0e3cb08-f8eb-442e-ac55-3a843ca87234",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2F03490_serenesunset_3840x2160.jpg?alt=media&token=858b3ef0-ad43-4a72-b571-1b3ce642eec6",
+      "bio": "",
+      "privacyType": "private",
+      "members": [
+        {
+          "userId": 2,
+          "join_at": "2024-07-09T13:25:40.815Z"
+        },
+        {
+          "userId": 1720156601911,
+          "join_at": "2024-07-10T14:12:53.017Z"
+        }
+      ],
+      "created_at": "2024-07-09T13:25:40.815Z"
+    },
+    {
+      "id": 1720602855535,
+      "groupName": "gr3",
+      "group_picture": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2F03760_greenhell_3840x2160.jpg?alt=media&token=20626816-107e-407b-b561-328b571b9bf8",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2FCorvette%20Z06%20in%20San%20Francisco.jpg?alt=media&token=0180d810-03e7-4bb6-be12-f26bffcca559",
+      "bio": "",
+      "privacyType": "public",
+      "members": [
+        {
+          "userId": 123,
+          "join_at": "2024-07-10T09:14:15.535Z"
+        },
+        {
+          "userId": 1720156601911,
+          "join_at": "2024-07-10T09:17:16.757Z"
+        },
+        {
+          "userId": 1720156601911,
+          "join_at": "2024-07-10T14:13:49.185Z"
+        },
+        {
+          "userId": 1720156601911,
+          "join_at": "2024-07-10T14:43:07.343Z"
+        }
+      ],
+      "created_at": "2024-07-10T09:14:15.535Z"
+    },
+    {
+      "id": 1720702124895,
+      "groupName": "7hhon",
+      "group_picture": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2FCCP09635.jpg?alt=media&token=66abff63-0216-40ba-a58d-4ba0b79cd6a4",
+      "banner": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fz5530580602165_cac21584c591c3e9f28c1c05bb007a8b.jpg?alt=media&token=981e23fb-99b8-4f8d-907b-dfd4e51d787b",
+      "bio": "",
+      "privacyType": "public",
+      "members": [
+        {
+          "userId": 123,
+          "join_at": "2024-07-11T12:48:44.895Z"
+        },
+        {
+          "userId": 1720156029244,
+          "join_at": "2024-07-11T12:49:33.586Z"
+        }
+      ],
+      "created_at": "2024-07-11T12:48:44.895Z"
+    },
+    {
+      "id": 1720763721251,
+      "groupName": "j2team",
+      "group_picture": "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Favatar%2F439447196_406005448861612_191818592475277229_n.jpg?alt=media&token=c4abc1ef-bc92-47a0-bcc1-c5ed18a90459",
+      "banner": "",
+      "bio": "",
+      "privacyType": "public",
+      "members": [
+        {
+          "userId": 123,
+          "join_at": "2024-07-12T05:55:21.251Z"
+        },
+        {
+          "userId": 1720156601911,
+          "join_at": "2024-07-12T08:45:49.298Z"
+        }
+      ],
+      "created_at": "2024-07-12T05:55:21.251Z"
+    },
+    {
+      "id": 1720767775320,
+      "groupName": "aoma",
+      "group_picture": "",
+      "banner": "",
+      "bio": "",
+      "privacyType": "public",
+      "members": [
+        {
+          "userId": 123,
+          "join_at": "2024-07-12T07:02:55.320Z"
+        }
+      ],
+      "created_at": "2024-07-12T07:02:55.320Z"
+    }
+  ],
+  "friend_requests": [
+    {
+      "from_user_id": 1720156601911,
+      "to_user_id": 1720156029244,
+      "status": "accepted",
+      "created_at": "2024-07-11T02:33:06.930Z",
+      "id": 1
+    },
+    {
+      "from_user_id": 1720598647379,
+      "to_user_id": 1720156601911,
+      "status": "accepted",
+      "created_at": "2024-07-12T00:46:47.032Z",
+      "id": 1720745207032
+    },
+    {
+      "from_user_id": 1720598647379,
+      "to_user_id": 1720168472498,
+      "status": "requested",
+      "created_at": "2024-07-12T00:46:54.199Z",
+      "id": 1720745214199
+    },
+    {
+      "from_user_id": 1720584402987,
+      "to_user_id": 1111111111111,
+      "status": "accepted",
+      "created_at": "2024-07-12T01:09:10.469Z",
+      "id": 1720746550469
+    }
+  ],
+  "admin": [
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "confirmPassword": "admin123",
+      "id": 1111111111111,
+      "userName": "Admin",
+      "avatar": "",
+      "banner": "",
+      "bio": "",
+      "follows": [],
+      "friends": [],
+      "groups": [],
+      "created_at": "2024-07-10T08:04:07.379Z"
     }
   ]
 }

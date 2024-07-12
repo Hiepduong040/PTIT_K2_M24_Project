@@ -1,14 +1,13 @@
-
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from '../store/reducers/authSlice';
-import communityReducer from '../store/reducers/communitySlice';
-import postReducer from '../store/reducers/postSlice';
+import authModalReducer from './reducers/authModalSlice';
+import authReducer from './reducers/authSlice';  
+import communityReducer from './reducers/communitySlice';
 
 const store = configureStore({
   reducer: {
-    auth: authReducer,
+    authModal: authModalReducer,
+    user: authReducer,
     community: communityReducer,
-    post: postReducer,
   },
 });
 

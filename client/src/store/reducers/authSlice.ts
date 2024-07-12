@@ -1,23 +1,28 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { User } from '../../interfaces/interfaces';
 
-const initialState = {
-  user: null,
-  loadingUser: false,
+export interface AuthState {
+  user: User | null;
+}
+
+const initialState: AuthState = {
+  user: JSON.parse(localStorage.getItem('user')!) || null, // Khởi tạo từ localStorage
 };
 
 const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    setUser: (state, action) => {
+    setUser(state, action: PayloadAction<User | null>) {
       state.user = action.payload;
+      localStorage.setItem('user', JSON.stringify(action.payload)); // Lưu trữ vào localStorage
     },
-    setLoadingUser: (state, action) => {
-      state.loadingUser = action.payload;
+    logout(state) {
+      state.user = null;
+      localStorage.removeItem('user'); // Xóa thông tin người dùng khỏi localStorage khi logout
     },
   },
 });
 
-export const { setUser, setLoadingUser } = authSlice.actions;
-
+export const { setUser, logout } = authSlice.actions;
 export default authSlice.reducer;

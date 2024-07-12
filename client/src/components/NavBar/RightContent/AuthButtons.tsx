@@ -1,9 +1,9 @@
-// AuthButtons.js
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../../../store/reducers/authModalSlice';
 import Button from 'react-bootstrap/Button';
 
-const AuthButtons = () => {
+export default function AuthButtons() {
   const dispatch = useDispatch();
 
   return (
@@ -24,6 +24,6 @@ const AuthButtons = () => {
       </Button>
     </div>
   );
-};
+}
 
-export default AuthButtons;
+

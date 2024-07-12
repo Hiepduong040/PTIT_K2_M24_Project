@@ -1,45 +1,43 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Login from '../../Modal/Auth/Login';
-import AuthButtons from './AuthButtons';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../store/store';
 import AuthModal from '../../Modal/Auth/AuthModal';
-import { User } from '../../../interfaces/interfaces'; 
-import { useDispatch } from 'react-redux';
 import { closeModal, setView } from '../../../store/reducers/authModalSlice';
+import { logout, setUser } from '../../../store/reducers/authSlice'; // Import chính xác hàm logout
 import { Button } from 'react-bootstrap';
+import AuthButtons from './AuthButtons';
+import Icons from './Icons';
+import MenuWrapper from './ProfileUser/MenuWrapper';
 
 export default function RightContent() {
-    const [user, setUser] = useState<User | null>(null);
-    const navigate = useNavigate();
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const userState = useSelector((state: RootState) => state.user);
+    const user = userState.user;
 
-    const handleSetUser = (user: User | null) => {
-        setUser(user);
-        if (user) {
-            dispatch(closeModal()); // Đóng modal khi đăng nhập thành công
-            navigate('/'); // Chuyển hướng đến trang chính
+    useEffect(() => {
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+            dispatch(setUser(JSON.parse(storedUser))); // Khởi tạo người dùng từ localStorage
         }
-    };
+    }, [dispatch]);
 
-    const logout = () => {
-        setUser(null);
+    const handleLogout = () => {
+        dispatch(logout());
         dispatch(setView('login')); // Chuyển view về login
+        navigate('/'); // Chuyển hướng đến trang chính
     };
 
     return (
         <div className='flex justify-center items-center'>
-            <AuthModal>
-                <Login toggleView={() => {}} setUser={handleSetUser} />
-            </AuthModal>
+            <AuthModal />
             <div className='flex justify-center items-center'>
                 {user ? (
-                    <Button
-                        variant=""
-                        className='w-20 ml-1.5 mt-1 hidden sm:flex w-[80px] justify-center md:w-[110px] h-7 items-center rounded-full text-white border-1 bg-blue-500 border-sky-600 hover:bg-blue-500'
-                        onClick={logout}
-                    >
-                        Logout
-                    </Button>
+                    <>
+                        <Icons />
+                        <MenuWrapper />
+                    </>
                 ) : (
                     <AuthButtons />
                 )}
