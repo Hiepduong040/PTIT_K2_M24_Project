@@ -39,6 +39,7 @@ export default function Communities({ menuOpen }: CommunitiesProps) {
   const handleGroupClick = (communityId: number, groupName: string) => {
     localStorage.setItem('communityId', communityId.toString());
     navigate(`/page/${groupName}`);
+    window.location.reload();
   };
 
   return (

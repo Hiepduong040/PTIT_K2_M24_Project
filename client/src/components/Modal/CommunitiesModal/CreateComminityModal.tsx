@@ -26,7 +26,7 @@ export default function CreateCommunityModal({ isOpen, handleClose, userId, onGr
         "Community names must be between 3–21 characters, and can only contain letters, numbers, or underscores."
       );
     }
-
+    // window.location.reload()
     setLoading(true);
     try {
       const groups = await fetchGroups();
@@ -61,6 +61,7 @@ export default function CreateCommunityModal({ isOpen, handleClose, userId, onGr
       setCommunityType("public");
       onGroupCreated(); // Call the callback to refresh the group list
       handleClose();
+      // window.location.reload()
     } catch (error: any) {
       setNameError(error.message);
     }

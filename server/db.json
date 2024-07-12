@@ -181,6 +181,17 @@
       "reactions": [],
       "created_at": "2024-07-12T08:44:53.191Z",
       "id": 33
+    },
+    {
+      "user_id": 1720156601911,
+      "content": "Được đi",
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/ptit-f50c2.appspot.com/o/images%2Fpost%2Fz4975765068367_d67dba707c8875b38e29181933df25a7.jpg?alt=media&token=9906cdfe-590c-4fdd-ae4e-3e02ff56e1aa"
+      ],
+      "created_at": "2024-07-12T09:45:17.273Z",
+      "reactions": [],
+      "type": "public",
+      "id": 34
     }
   ],
   "comments": [
@@ -195,29 +206,6 @@
     }
   ],
   "groups": [
-    {
-      "id": 1720492790007,
-      "groupName": "gr1",
-      "group_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYP8_rR2qUm554ZlWZ5Pzyyd-6qduaAu8Ng&s",
-      "banner": "https://uploads-ssl.webflow.com/60555afdedaac932fc6d642d/60aef505344f330e4853f0cd_AdobeStock_354016533.jpg",
-      "bio": "",
-      "privacyType": "private",
-      "members": [
-        {
-          "userId": 2,
-          "join_at": "2024-07-09T02:39:50.007Z"
-        },
-        {
-          "userId": 1720156029244,
-          "join_at": "2024-07-10T03:46:56.924Z"
-        },
-        {
-          "userId": 1720598647379,
-          "join_at": "2024-07-12T00:25:22.960Z"
-        }
-      ],
-      "created_at": "2024-07-09T02:39:50.007Z"
-    },
     {
       "id": 1720531540815,
       "groupName": "demo12345",
@@ -303,8 +291,8 @@
       "created_at": "2024-07-12T05:55:21.251Z"
     },
     {
-      "id": 1720767775320,
-      "groupName": "aoma",
+      "id": 1720777658580,
+      "groupName": "ptit",
       "group_picture": "",
       "banner": "",
       "bio": "",
@@ -312,10 +300,10 @@
       "members": [
         {
           "userId": 123,
-          "join_at": "2024-07-12T07:02:55.320Z"
+          "join_at": "2024-07-12T09:47:38.580Z"
         }
       ],
-      "created_at": "2024-07-12T07:02:55.320Z"
+      "created_at": "2024-07-12T09:47:38.580Z"
     }
   ],
   "friend_requests": [

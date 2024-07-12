@@ -51,6 +51,7 @@ export default function CreateUserPostModal({
 
       onPostCreated(); // Refresh the post list
       handleClose(); // Close the modal
+      window.location.reload()
     } catch (error) {
       console.error('Error creating post:', error);
     }

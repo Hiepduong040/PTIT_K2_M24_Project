@@ -38,6 +38,7 @@ export default function Sidebar() {
   const handleGroupClick = (groupId: number, groupName: string) => {
     localStorage.setItem('communityId', groupId.toString());
     navigate(`/page/${groupName}`);
+    window.location.reload();
   };
   
 
